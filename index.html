@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Période d'essai</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo.ico" />
+        <!-- links -->
+        <link rel="stylesheet" href="assets/css/app.css"/>
+        
+       
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="assets/libs/bootstrap/3.3.4/dist/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="assets/libs/bootstrap/3.3.4/dist/css/bootstrap-theme.min.css">
+         <!--IE-->
+        <!-- [if ite 8.0] >
+            <link rel="stylesheet" href="assets/css/ie.css"/>
+        <! [endif] -->
+        
+    </head>
+    <body style="width: 99.2%">
+        <!--### Cord ###-->
+        <div ng-app="dsiApp" class="col-xs-12 col-sm-12 col-md-12" ng-controller="angularCtrl">
+            <!-- Form -->
+            <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-9">
+                    <img src="./assets/img/logo.png" id="logoDavidson" width="80px;" height="80px;">
+                </div>
+            </div>
+            <div class="row rowP">
+                <!-- Felicitaions Image -->
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="div-img-felicitations"></div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <form class="form-inline">
+                        <div  class="col-xs-12 col-sm-4 col-md-4">
+                            <label for="nom" class="text-data">Nom :</label>
+                            <input type="text" class="form-control" id="input" ng-model="nom" placeholder="Nom"> 
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <label for="prenom" class="text-data">Prénom :</label>
+                            <input type="text" class="form-control" id="input" ng-model="prenom" placeholder="Prénom">
+                        </div>
+                    </form>	
+                </div>
+
+            </div>
+            <br>
+            <!-- Container of 3 messages -->
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Good message -->
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div id="msg" class="col-xs-12 col-sm-12 col-md-12 div-text-area1">
+                            <textarea class="col-xs-11 col-sm-11 col-md-11 text-area" id="t1" ng-model="msg1" rows="7" wrap="hard"></textarea>  
+                            <div class="col-xs-12 col-sm-12 col-md-12" id="div-logo">
+                                <img class="logo" ng-src="{{imgLogo1}}" >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Idees -->
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div id="msg" class="col-xs-12 col-sm-12 col-md-12 div-text-area2">
+                            <textarea class="col-xs-11 col-sm-11 col-md-11 text-area" id="t2" ng-model="msg2" rows="7" wrap="hard"></textarea>  
+                            <div class="col-xs-12 col-sm-12 col-md-12" id="div-logo">
+                                <img class="logo" ng-src="{{imgLogo2}}" >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- To change -->
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="col-xs-12 col-sm-12 col-md-12 div-text-area3" id="msg">
+                            <textarea class="col-xs-11 col-sm-11 col-md-11 text-area" id="t3" ng-model="msg3" rows="7" wrap="hard"></textarea>  
+                            <div class="col-xs-12 col-sm-12 col-md-12" id="div-logo">
+                                <img class="logo" ng-src="{{imgLogo3}}" >
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <!-- Submit button -->
+                <div class="mdl">
+                    <!-- Button HTML (to Trigger Modal) -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 bs">
+                        <button type="button" href="#myModal" class="btn bnt-lg button" data-toggle="modal" ng-click="submit(nom, prenom, msg1, msg2, msg3)" style="font-size: 20px;">Envoyer</button>
+                    </div>
+                    <!-- Modal HTML -->
+                    <div id="myModal" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">{{resultat}}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>{{alert}}</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <img src="./assets/img/logo.png" style="float:center;" width="60px;" height="60px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--                 Submit Button v.2 in footer 
+                 <div class="footer">
+                        <div class="col-md-12">
+                                <button type="button" class="btn bnt-lg button" ng-click="submit(nom, prenom, filiale, msg1, msg2, msg3)" style="font-size: 30px;">Envoyer</button>
+                        </div> 
+                 </div> -->
+            </div>
+        </div>
+
+
+
+
+        <!--### Dependances ###-->
+        <!-- AngularJS -->
+        <script type="text/javascript" src="assets/libs/angularjs/1.3.16/angular.min.js"></script>
+        <!-- AngularJS Route -->
+        <script type="text/javascript" src="assets/libs/angularjs/1.3.16/angular-route.min.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="assets/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Autosize -->
+        <script type="text/javascript" src="assets/libs/jquery/1.11.3/autosize.min.js"></script>
+        <!-- <script type="text/javascript" src="assets/js/autosize.js"></script> -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="assets/libs/bootstrap/3.3.4/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="app/app.module.js"></script>
+    </body>
+</html>

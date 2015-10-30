@@ -1,0 +1,121 @@
+/* logoDavidson */
+#logoDavidson{
+  margin-right: 50%;
+  margin-left: 60%;
+}
+
+/* label & input */
+.text-data{
+  font-size: 40px;
+  color: #3EB69D;
+}
+#input{
+  vertical-align: 5px;
+  margin-left: 3%;
+}
+.rowP{
+  padding-top: 10px;
+}
+.bs{
+  padding-bottom: 15px;
+}
+
+/* image */
+.center-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 50px; 
+}
+.div-img-felicitations{
+  background-image: url(../img/src/imgFelicitations.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 5vw;
+}
+
+/* head */
+.div-head-area1{
+  background-image: url(../img/src/imgHeadMsg1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.div-head-area2{
+  background-image: url(../img/src/imgHeadMsg2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width:  100%;
+  height: 100%;
+}
+.div-head-area3{
+  background-image: url(../img/src/imgHeadMsg3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width:  100%;
+  height: 100%;
+}
+
+/* textarea div's */
+.div-text-area1{
+  background-image: url(../img/src/img1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.div-text-area2{
+  background-image: url(../img/src/img2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.div-text-area3{
+  background-image: url(../img/src/img3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* textarea */
+.text-area{
+  background-color: transparent;
+  font-size: 155%;
+  color: #FFF;
+  border: none;
+  outline: none;
+  margin: 21% 0 0px;
+  resize: none;
+}
+
+/* logo */
+#div-logo{
+  padding-left: 80%; 
+  padding-bottom: 3%;
+}
+.logo{
+  width: 100%; 
+  height: 120%;
+  padding-bottom: 10px;
+}
+
+/* buttom */
+.button{
+  margin-left: 50%;
+  color: #FFF;
+  width: 100px;
+  height: 42px;
+  font-size: 35px;
+  background-color: #F00070;
+}
+
+/* footer */
+.footer{
+  position: fixed;
+  display: block;
+  bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px; 
+  height: 40px;
+  width: 100%;
+  color: #000;
+}
