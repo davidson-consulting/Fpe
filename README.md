@@ -1,10 +1,8 @@
 #Feedback "Période d'essai" (Trial period)
-==========================================
 
 Simple angular + php tool to get feedback from employees at the end of their trial period.
 
 ##Step
-=====
 
 Fields for `periodeessaidb` table:
 ```sql
@@ -21,6 +19,5 @@ CREATE TABLE `db` (
 ```
 
 ##Integration:
-==============
 
 If you wish to integrate this application, don't hesitate to contact the Davidson  IT/Web team via davidson@davidson.fr
